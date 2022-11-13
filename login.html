@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="index.html" method="post">
+    <div class="box">
+        <div class="form">
+            <h2>ONEBITSPORTS</h2>
+            <div class="inputBox">
+                <span>E-MAIL</span><br><br>
+                <input type="text" required="required" id="email">
+                <i></i>
+        </div>
+        <div class="inputBox">
+            <span>SENHA</span><br><br>
+            <input type="password" required="required" id="senha">
+            <i></i>
+
+        </div><br><br>
+        <div class="inputBox">
+        <button type="submit" onclick="enviar(); return false">ENVIAR</button>
+        </div>
+    </div>
+</form>
+</body>
+<script>
+    function enviar(){
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+        if(email == "ruanfelix287@gmail.com" && senha == "123456"){
+            alert("Usuário cadastrado")
+            location.href = "index.html"
+        }else{
+            alert("Algo de errado aconteceu, por favor, tente novamente.")
+        }
+    }
+</script>
+</html>
